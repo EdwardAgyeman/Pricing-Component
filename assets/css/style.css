@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ==============================================HEADER====================================== */
+h1 {
+    text-align: center;
+    color: rgb(112,113,144);
+}
+
+div:first-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.switch-label {
+    color: rgb(112,113,144);
+    margin: 0 10px;
+}
+
+/* ===================TOGGLE SWITCH============= */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(125,129,229);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: hsl(236, 72%, 79%);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px hsl(236, 72%, 79%);
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+/* =================================================MAIN============================================ */
+body {
+    background-color: rgb(247,247,255);
+    margin: 0;
+}
+.pricing-box{
+    width: 100px;
+    height: 300px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+/* .pricing-box-active{
+    
+}
+
+.learn-more-btn-active {
+    
+}
+
+.learn-more-btn-inactive {
+
+} */
+
