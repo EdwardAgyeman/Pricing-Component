@@ -62,7 +62,7 @@ h1 {
 }
 
 input:checked + .slider {
-    background-color: hsl(236, 72%, 79%);
+    background-color: rgb(125,129,229);
 }
 
 input:focus + .slider {
@@ -85,6 +85,12 @@ input:checked + .slider:before {
 
 
 /* =================================================MAIN============================================ */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .pricing-box{
     text-align: center;
     width: 270px;
@@ -92,24 +98,55 @@ input:checked + .slider:before {
     padding: 20px;
     border-radius: 10px;
     background-color: white;
+    margin: 35px 0;
+    /* display: inline; */
 }
+
+.pricing-box-professional{
+    text-align: center;
+    width: 270px;
+    height: 380px;
+    padding: 40px 20px;
+    border-radius: 10px;
+    background-color: hsl(237, 63%, 64%);
+    background-image: linear-gradient(-45deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%)) ;
+    /* background-color: wheat; */
+    margin: 35px 0;
+    /* display: inline; */
+}
+
 hr {
     width: 90%;
     height: 1px;
     background-color: rgb(129,132,149,.4);
     border: 0;
 }
+
 .pricing-box h2 {
     color: rgb(129,132,149);
 }
+
 .price p {
     color: rgb(74,75,95);
     font-size: 50px;
     margin: 20px 0;
 }
+
 .specs p {
     color: rgb(129,132,149);
 }
+
+.pricing-box-professional hr {
+    background-color: white;
+    opacity: 0.4;
+}
+.pricing-box-professional h2 {
+    color: white;
+}
+.pricing-box-professional p {
+    color: white;
+}
+
 .learn-more {
     text-decoration: none;
     color: white;
@@ -119,16 +156,30 @@ hr {
     border-radius: 5px;
     margin: 20px auto;
     display: block;
-    width: 100px;
+    width: 120px;
+    text-transform: uppercase;
+    /* letter-spacing: 1.5; */
 }
+
+.pricing-box-professional .learn-more {
+    background-color: white;
+    color: hsl(237, 63%, 64%);
+}
+
 .learn-more:hover {
+    background-color: white;
     color: hsl(237, 63%, 64%);
     background-color: white;
     border: 1px solid;
     transition: 400ms;
 }
+.pricing-box-professional .learn-more:hover {
+    background-color: white;
+    background-color: hsl(237, 63%, 64%);
+    color: white;
+}
 
-.pricing-box-active{
+/* .pricing-box-active{
 
 }
 
@@ -138,5 +189,5 @@ hr {
 
 .learn-more-btn-inactive {
 
-}
+} */
 
