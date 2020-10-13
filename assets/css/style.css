@@ -191,3 +191,14 @@ hr {
 
 } */
 
+/* ============================================Mobile============================================ */
+@media screen and (max-width: 600px) {
+    main {
+        display: block;
+        /* padding-left: 100px; */
+    }
+    .pricing-box {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
