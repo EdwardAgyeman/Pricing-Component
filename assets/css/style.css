@@ -192,7 +192,7 @@ hr {
 } */
 
 /* ============================================Mobile============================================ */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     main {
         display: block;
         /* padding-left: 100px; */
